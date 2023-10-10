@@ -1,0 +1,59 @@
+body {
+    background-color: #ccd9ff;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Courier New';
+	text-align: center !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-media-container {
+	list-style-type: none;
+	padding: 0;
+	position: fixed;
+	top: 50%;
+	left: calc(100% - 50px);
+	transform: translateY(-50%);
+	min-width: 250px;
+}
+
+.social-media {
+    align-items: center;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media:hover {
+    transform: translateX(calc(-100% + 50px));
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.social-media a {
+    color: #fff;
+    padding: 0 10px;
+}
+
+.social-media.blog {
+	background-color: #e17b77;
+}
+
+.social-media.twitter {
+	background-color: #00aced;
+}
+
+.social-media.github {
+	background-color: #333;
+}
+
