@@ -1,0 +1,89 @@
+/* Creating a font variable */
+@font-face {
+    font-family: architect;
+    src: url(ronysiswadi_architect.ttf);
+}
+
+/* Using google font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap');
+
+img {
+    width: 100%;
+    border-radius: 12px;
+    height: 214px;
+    /* remove image distortion using object-fit */
+    object-fit: cover;
+}
+
+body {
+    background-color: #e0f2ff;
+    font-family: 'Raleway', sans-serif;
+}
+
+#container {
+    max-width: 300px;
+    /* center horirzontally */
+    margin: 0 auto;
+
+    margin-top: 20vh;
+}
+
+.card {
+    background-color: white;
+    padding: 8px;
+    
+    border-radius: 12px;
+    border: 1px solid #bacdb8;
+}
+
+.tag {
+    padding: 4px 8px;
+    border: 1px solid #e5eaed;
+
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #788697;
+}
+
+.name {
+    font-family: architech;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+
+    margin-top: 16px;
+}
+
+p {
+    font-size: 14px;
+    color: #7f8c9b;
+    line-height: 150%;
+}
+
+button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+
+    font-weight: 600;
+    color: #0077ef;
+    background-color: #e0efff;
+
+    margin: 0 auto;
+    /* needs to be a block to work margin center */
+    display: block;
+
+    /* smooth animation to hover */
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+
+button:focus, button:hover{
+    background-color: #0077ef;
+    color: #e0efff;
+}
+
+.card_details {
+    padding: 16px 8px 8px 8px;
+}
