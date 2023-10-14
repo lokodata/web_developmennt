@@ -1,0 +1,106 @@
+html, body {
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0f2ff;
+}
+
+.photo {
+    margin: 0px auto;
+    width: 400px;
+    height: 600px;
+    background: url("https://images.unsplash.com/photo-1471306224500-6d0d218be372?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
+    background-size: cover;
+    padding: 20px;  
+}
+
+button {
+    color: #777;
+    fill: currentColor;
+    border: 1px solid transparent;
+    background-color: hsla(0.0%, 100%, .85);
+    border-radius: 4px;
+    padding: 9px 11px;
+}
+
+i {
+    font-size: 19px;
+}
+
+.top i {
+    margin-right: 5px;
+}
+
+.like-button {
+    margin-right: 10px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 10px;
+}
+
+.photographer-name {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.mdi-heart {
+    margin-right: 10px;
+    color: red;
+}
+
+.download-image {
+    height: 22px;
+}
+
+.mdi-plus, .custom-download {
+    color: black;
+}
+
+img {
+    width: 45px;
+    height: 45px;
+}
+
+/* Flexbox start here */
+.photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.top {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    display: flex;
+    align-items: center;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photographer {
+    display: flex;
+    align-items: center;
+}
