@@ -31,9 +31,14 @@ button {
     color: #777;
     fill: currentColor;
     border: 1px solid transparent;
-    background-color: hsla(0.0%, 100%, .85);
+    background-color: rgba(240, 240, 240, 1);
     border-radius: 4px;
     padding: 9px 11px;
+}
+
+button:hover {
+    background-color: rgba(240, 240, 240, 0.5);
+    color: white;
 }
 
 i {
